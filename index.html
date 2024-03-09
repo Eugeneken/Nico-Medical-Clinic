@@ -717,3 +717,40 @@
 </html>
 
 <p>Hello World!</p>
+<h1>This is a Heading</h1>
+<button onclick="myFunction()">Click</button>
+
+<script>
+function myFunction() {
+  alert("You clicked the button!");
+}
+</script>
+
+<?php
+// Check if user is logged in or not
+if (isset($_SESSION['loggedin'])) {
+  echo "<p>Welcome " . $_SESSION["username"] . "</p>";
+  echo "<br />";
+  echo "<a href='profile.php'>Profile</a>";
+  echo "<br />";
+  echo "<a href='index.php?logout=true'>Logout</a>";
+  } else {
+    // Not logged in
+    echo "<a href='login.php'>Login</a>"; 
+    echo " | ";
+    echo "<a href='register.php'>Register</a>";
+  }
+?>
+
+<!-- PHP code to handle logout functionality -->
+<?php
+  if ($_GET['logout'] == 'true') {
+    session_start();
+    
+    unset($_SESSION['log  gedin']);
+    session_destroy();
+    
+    header('Location: index.php');
+  }
+?>
+</body></html> 
