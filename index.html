@@ -11,7 +11,7 @@
   -->
   <title>Nico Medical Clinic</title>
   <meta name="title" content="Nico medical centre - home">
-  <meta name="description" content="This is a madical html template made by eugene">
+  <meta name="description" content="This is a madical html template made by Eugene">
 
   <!-- 
     - favicon
@@ -213,7 +213,7 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  Pallietive Care
+                  Palliative Care
                 </h3>
 
                 <p class="card-text">
@@ -257,7 +257,7 @@
                 </h3>
 
                 <p class="card-text">
-                  We offer  a variety of services to help you manage your martenial status.
+                  We offer  a variety of services to help you manage your motherhood status.
                 </p>
 
                 
@@ -310,8 +310,7 @@
                 <li>
                   <button class="tab-btn active">Mission</button>
 
-                  <span class="span">To be the beacon of health and healing in our community, providing exceptional,
-                     compassionate, and accessible healthcare to every individual we serve.</span>
+                  <span class="span"></span>
                 </li>
                 
 
@@ -329,129 +328,6 @@
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #LISTING
-      
-
-      <section class="section listing" id="listing" aria-labelledby="listing-label">
-        <div class="container">
-
-          <ul class="grid-list">
-
-            <li>
-              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listing</p>
-
-              <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Psychiatry</h3>
-
-                  <p class="card-text">Peter Nyaoke</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Gynecology</h3>
-
-                  <p class="card-text">Martin Shikuku</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pulmonology</h3>
-
-                  <p class="card-text">Mauris Nyambu</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Orthopedics</h3>
-
-                  <p class="card-text">Joy Atieno</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pediatrics</h3>
-
-                  <p class="card-text">Lucy Kamau</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Osteology</h3>
-
-                  <p class="card-text">Nelly Kemunto</p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
--->
-
 
 
       <!-- 
@@ -715,42 +591,4 @@
 </body>
 
 </html>
-
-<p>Hello World!</p>
-<h1>This is a Heading</h1>
-<button onclick="myFunction()">Click</button>
-
-<script>
-function myFunction() {
-  alert("You clicked the button!");
-}
-</script>
-
-<?php
-// Check if user is logged in or not
-if (isset($_SESSION['loggedin'])) {
-  echo "<p>Welcome " . $_SESSION["username"] . "</p>";
-  echo "<br />";
-  echo "<a href='profile.php'>Profile</a>";
-  echo "<br />";
-  echo "<a href='index.php?logout=true'>Logout</a>";
-  } else {
-    // Not logged in
-    echo "<a href='login.php'>Login</a>"; 
-    echo " | ";
-    echo "<a href='register.php'>Register</a>";
-  }
-?>
-
-<!-- PHP code to handle logout functionality -->
-<?php
-  if ($_GET['logout'] == 'true') {
-    session_start();
-    
-    unset($_SESSION['log  gedin']);
-    session_destroy();
-    
-    header('Location: index.php');
-  }
-?>
-</body></html> 
+  
