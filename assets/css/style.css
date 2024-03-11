@@ -1149,4 +1149,6 @@ body.nav-active { overflow: hidden; }
   font-size: 7rem !important
 }
 
-.headline-md { font-weight: bold; line-height: 1.3; font-size:
+.headline-md { font-weight: bold; line-height: 1.3; font-size: 21px ;}
+.blog-card:is(:hover, :focus-within)::after
+/* stylelint-disable-next-line selector
