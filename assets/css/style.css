@@ -1139,17 +1139,6 @@ body.nav-active { overflow: hidden; }
     height: 100%;
     background-color: var(--white_a20);
   }
-
-  .footer-bottom{
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-    }
-    
-  }
-  .blog-card{
-    height:auto;
-  }
-  hello{
+  .contact-link{
     
   }
