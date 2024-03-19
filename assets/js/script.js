@@ -99,3 +99,8 @@ window.addEventListener("scroll", revealElementOnScroll);
 window.addEventListener("load", revealElementOnScroll);
 
 
+const navbar = documents. querySelector("[data navbar]")
+const toggleButton = document.querySelector(".toggle-button");
+navbar.addEventListener("click", toggleNavBar);
+
+function
